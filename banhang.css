@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+.btn-toggle-menu{
+    display: none;
+    cursor: pointer;
+}
+#toggle-menu{
+    display: none;
+}
+.menu img{
+    margin: 0px 10px -40px;
+}
+/* menu */
+nav{
+    background-color: snow;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+
+}
+.menu li{
+    padding: 10px 20px;
+}
+.menu li a{
+    display: block;
+    padding: 8px 15px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+.menu li.active a{
+    color: white;
+    background-color: black;
+}
+.menu li a:hover{
+    color: white;
+    border-radius: 15px;
+    background-color: black;
+}
+
+@media screen and (max-width: 780px) {
+    nav{
+        flex-wrap: wrap;
+    }
+    .menu{
+        display: none;
+    }
+    .btn-toggle-menu{
+        display: unset;
+    }
+    #toggle-menu:checked + .menu{
+        display: block;
+        width: 100%;
+    }
+}
+.menu img{
+    margin: 0px 10px -40px;
+}
+.menu img:hover{
+    opacity: 0;
+}
+/* slide */
+.slide{
+    margin-top: 30px;
+    position: relative;
+}
+.slide .left{
+    position: absolute;
+    left: 75px;
+    top: 200px;
+    width: 400px;
+}
+.slide h2{
+    font-size: 90px;
+    color: yellow;
+}
+h2:hover{
+    color: red;
+}
+.left p{
+    margin-top: 10px;
+}
+.slide .btn{
+    margin-top: 20px;
+    padding: 15px 55px;
+    background-color: rgb(48, 77, 99);
+    border-radius: 30px  ;
+    color: azure;
+    border: azure;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.slide .right{
+    position: absolute;
+    bottom: 75px;
+    right: 115px;
+}
+ .hidden{
+    border: none;
+    color: #fff;
+    background-color: rgba(0,0,0,0);
+    font-size: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.hidden:hover{
+    color: rgb(144, 140, 140);
+}
+.btn:hover{
+    background-color: rgb(144, 140, 140);;
+}
+.banner00{
+   padding-top: 20px;
+}
+/* Banner */
+/* .banner{
+ margin-top: 20px;
+}
+#bannerleft{
+    width: 680px;
+    margin-right: 20px;
+    float: left;
+    height: 1200px;
+    background-image: url(./image/banner1.jpg);
+}
+#bannerright{
+    width: 500px;
+    float: left;
+
+} */
+/* Contenct */
+
+.title{
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.sp{
+    
+    float: left;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.sp img{
+    transform: scale(1.0);
+}
+.sp img:hover{
+    transform: scale(2.0);
+}
+.name{
+    width: 285px;
+    float: left;
+    overflow: hidden;
+    margin-right: 15px;
+    text-align: center;
+    
+}
+.name p{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.price{
+    width: 285px;
+    float: left;
+    overflow: hidden;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #adad90;
+    cursor: pointer;
+}
+.price span{
+    font-size: 12px;
+}
+.price:hover{
+    color: red;
+}
+.btn{
+    text-align: center;
+    padding: 15px 55px;
+    background-color: rgb(48, 77, 99);
+    border-radius: 30px  ;
+    color: azure;
+    border: azure;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.buy{
+    width: 285px;
+    float: left;
+    overflow: hidden;
+    margin-right: 15px;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+.tren p{
+    font-size: 15px;
+}
+.onl,.chinhsach,.thongtin,.faq{
+    float: left;
+    margin-right: 90px;
+}
+.gopy{
+    float: left;
+    margin-right: 150px;
+    margin-right: 110px;
+}
+.sdt{
+    color: orange;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
